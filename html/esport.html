@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogGames - Esports</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    {/* Path to CSS is one level up */}
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Specific styles for Esports page */
+        body {
+            background-color: #1a1a1a; /* Darker background */
+            /* Example background - replace with a real esports image */
+            background-image: url('../images/esports-background.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        #esports-content {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.85); /* Semi-transparent background */
+            margin: 30px auto; /* Center the content */
+            max-width: 1200px; /* Limit width */
+            border-radius: 10px;
+            min-height: 70vh; /* Ensure it takes up significant height */
+            color: #eee; /* Lighter text color */
+        }
+        #esports-content h1 {
+            color: #00bcd4; /* Theme color */
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+        .match-placeholder, .stream-placeholder {
+            border: 2px dashed #444;
+            padding: 60px 30px;
+            margin: 40px auto;
+            color: #aaa;
+            max-width: 800px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+        }
+        .stream-placeholder iframe {
+            border: 1px solid #333;
+            margin-top: 20px;
+        }
+
+        /* Style for the active menu item */
+        .menu a[href="esports.html"] {
+             color: #00bcd4; /* Highlight active page */
+             font-weight: bold;
+             /* Optional: Add border or background */
+             /* border-bottom: 2px solid #00bcd4; */
+        }
+
+    </style>
+</head>
+<body>
+    {/* Consistent Header - Ensure paths are correct */}
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/logo-removebg-preview.png" alt="BlogGames Logo"></a> {/* Path back to root */}
+        </div>
+        <nav class="menu">
+             <ul>
+                <li><a href="../index.html">TRANG CHỦ</a></li> {/* Path back to root */}
+                <li class="dropdown">
+                    <button class="dropdown-toggle" aria-expanded="false">THỂ LOẠI ▾</button>
+                    <div class="dropdown-content games-dropdown">
+                        {/* Links should point to news page correctly */}
+                        <a href="news.html?category=sinh-ton">Sinh tồn</a>
+                        <a href="news.html?category=hanh-dong">Hành động</a>
+                        <a href="news.html?category=nhap-vai">Nhập vai</a>
+                        <a href="news.html?category=FPS-TPS">FPS-TPS</a>
+                        <a href="news.html?category=chien-luoc">Chiến lược</a>
+                        <a href="news.html?category=sports">Sports</a>
+                        <a href="news.html?category=battle-royal">Battle Royal</a>
+                    </div>
+                </li>
+                <li><a href="esports.html">ESPORTS</a></li> {/* Current page */}
+                <li><a href="community.html">COMMUNITIES</a></li>
+                <li><a href="../index.html#support-section">LIÊN HỆ</a></li> {/* Link to section on homepage */}
+            </ul>
+        </nav>
+        <div class="search-account">
+            <a href="login.html" id="login-btn">LOGIN</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="esports-content">
+            <h1>Trực Tiếp Esports</h1>
+            <p>Theo dõi các trận đấu đỉnh cao và sự kiện Esports mới nhất tại đây!</p>
+
+            {/* Placeholder for Live Streams / Match Schedules */}
+            <div class="stream-placeholder">
+                <p><strong>📺 Kênh Stream Nổi Bật (Ví dụ: Twitch)</strong></p>
+                <p>Khu vực này sẽ nhúng trình phát video trực tiếp hoặc hiển thị link.</p>
+                {/* Example of embedding Twitch (Replace with actual channel) */}
+                <!--
+                <iframe
+                    src="https://player.twitch.tv/?channel=YOUR_CHANNEL_NAME&parent=YOUR_WEBSITE_DOMAIN"
+                    frameborder="0"
+                    allowfullscreen="true"
+                    scrolling="no"
+                    height="378"
+                    width="620">
+                </iframe>
+                -->
+            </div>
+
+            <div class="match-placeholder">
+                <p><strong>📅 Lịch Thi Đấu & Kết Quả</strong></p>
+                <p>Thông tin về các giải đấu sắp tới và kết quả trận đấu sẽ được cập nhật ở đây. (Cần tích hợp API hoặc cập nhật thủ công)</p>
+            </div>
+
+        </section>
+    </main>
+
+    {/* Consistent Footer (Optional - can be removed if not needed on this page) */}
+     <section id="support-section">
+         {/* Copy from index.html if needed, ensure mailto links work */}
+         <div class="support-wrapper">
+            <div class="support-column">
+                 <h3>Thành viên thực hiện dự án</h3>
+                 <ul>
+                     <li>Hoàng Anh Dũng <a href="mailto:23050053@student.bdu.edu.vn">23050053</a></li>
+                     <li>Nguyễn Đặng Đức Duy <a href="mailto:23050070@student.bdu.edu.vn">23050070</a></li>
+                     <li>Nguyễn Thị Hồng Nhung <a href="mailto:23050075@student.bdu.edu.vn">23050075</a></li>
+                     <li>Nguyễn Tài Nhân <a href="mailto:23050062@student.bdu.edu.vn">23050062</a></li>
+                 </ul>
+            </div>
+            <div class="support-column">
+                <h3>Liên hệ chung</h3>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:bloggames.support@gmail.com">bloggames.support@gmail.com</a></p>
+                <p><i class="fab fa-facebook"></i> <a href="https://facebook.com/bloggames" target="_blank" rel="noopener noreferrer">facebook.com/bloggames</a></p>
+                <p><i class="fab fa-youtube"></i> <a href="https://youtube.com/@bloggames" target="_blank" rel="noopener noreferrer">youtube.com/@bloggames</a></p>
+            </div>
+         </div>
+     </section>
+    <footer>
+        © 2025 BlogGames. All rights reserved.
+    </footer>
+
+    {/* Minimal JS for Header functionality on this page */}
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // --- Login / Logout ---
+            const loginBtn = document.getElementById("login-btn");
+            if (loginBtn) {
+                const username = localStorage.getItem("loggedInUser");
+                if (username) {
+                    loginBtn.textContent = username;
+                    loginBtn.href = "#";
+                    loginBtn.style.cursor = "pointer";
+                    loginBtn.addEventListener("click", (event) => {
+                         event.preventDefault();
+                        if (confirm("Bạn có chắc muốn đăng xuất?")) {
+                            localStorage.removeItem("loggedInUser");
+                             // Redirect back to homepage after logout
+                            window.location.href = "../index.html";
+                        }
+                    });
+                }
+            }
+
+            // --- Menu Dropdown (Copied from main script) ---
+            document.querySelectorAll(".dropdown-toggle").forEach(toggle => {
+                toggle.addEventListener("click", (event) => {
+                    event.stopPropagation();
+                    const listItem = toggle.parentElement;
+                    const isActive = listItem.classList.contains("active");
+                    // Close other open dropdowns
+                    document.querySelectorAll(".menu li.dropdown.active").forEach(item => {
+                         if (item !== listItem) {
+                            item.classList.remove("active");
+                            item.querySelector(".dropdown-toggle").setAttribute("aria-expanded", "false");
+                        }
+                    });
+                    // Toggle current dropdown
+                    listItem.classList.toggle("active");
+                    toggle.setAttribute("aria-expanded", listItem.classList.contains("active"));
+                });
+            });
+             // Close dropdown if clicked outside
+            document.addEventListener("click", event => {
+                 if (!event.target.closest(".dropdown")) {
+                     document.querySelectorAll(".menu li.dropdown.active").forEach(item => {
+                         item.classList.remove("active");
+                         item.querySelector(".dropdown-toggle").setAttribute("aria-expanded", "false");
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
