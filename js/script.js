@@ -30,49 +30,49 @@ document.addEventListener("DOMContentLoaded", () => {
             video: "https://www.youtube.com/watch?v=MmB9b5njVbA",
             link: "https://www.minecraft.net/en-us",
             description: "Minecraft là một trò chơi sandbox nổi tiếng, nơi người chơi có thể xây dựng và khám phá thế giới mở không giới hạn.",
-            backgroundImage: "../images/minecraft-background-cfljc4haleghnajo.jpg"
+            backgroundImage: "./images/minecraft-background-cfljc4haleghnajo.jpg"
         },
         "hanh-dong": {
             name: "Assassin's Creed Shadows",
             video: "https://www.youtube.com/watch?v=vovkzbtYBC8",
             link: "https://www.ubisoft.com/en-sg/",
             description: "Assassin's Creed Shadows là phần mới nhất trong series hành động phiêu lưu, lấy bối cảnh Nhật Bản thời phong kiến.",
-            backgroundImage: "../images/8672297_Cover-ACS.webp"
+            backgroundImage: "./images/8672297_Cover-ACS.webp"
         },
         "nhap-vai": {
             name: "Final Fantasy XIV",
             video: "https://youtu.be/1bzWvyncQh8",
             link: "https://eu.finalfantasyxiv.com/",
             description: "Final Fantasy XIV là một MMORPG nổi tiếng với cốt truyện sâu sắc và thế giới giả tưởng rộng lớn.",
-            backgroundImage: "../images/Vvvbbsi3774hfiaoolfb_1920x1040.jpg"
+            backgroundImage: "./images/Vvvbbsi3774hfiaoolfb_1920x1040.jpg"
         },
         "FPS-TPS": {
             name: "Valorant",
             video: "https://www.youtube.com/watch?v=OHzUoFKPUB0",
             link: "https://valorant.vnggames.com/vi-vn/",
             description: "Valorant là một trò chơi bắn súng góc nhìn thứ nhất chiến thuật, nơi kỹ năng và phối hợp đội nhóm là chìa khóa.",
-            backgroundImage: "../images/valorant-game-ban-sung-chien-thuat-dau-tien-cua-riot-23-09-2020-3.jpg"
+            backgroundImage: "./images/valorant-game-ban-sung-chien-thuat-dau-tien-cua-riot-23-09-2020-3.jpg"
         },
         "chien-luoc": {
             name: "Arknights",
             video: "https://www.youtube.com/watch?v=--xJQ5oNcCA",
             link: "https://arknights.global/",
             description: "Arknights là một tựa game chiến thuật thủ tháp kết hợp nhập vai, với đồ họa anime đẹp mắt.",
-            backgroundImage: "../images/arknights-4k-waggbbwkw7f8w8dg.jpg"
+            backgroundImage: "./images/arknights-4k-waggbbwkw7f8w8dg.jpg"
         },
         "sports": {
             name: "Forza Horizon",
             video: "https://www.youtube.com/watch?v=5xy4n73WOMM",
             link: "https://forza.net/horizon",
             description: "Forza Horizon là một trò chơi đua xe thế giới mở nổi tiếng với đồ họa chân thực và trải nghiệm lái xe đỉnh cao.",
-            backgroundImage: "../images/e3-2016-forza-horizon-3-le-hoi-than-gio-gioi-thieu-game-01.jpg"
+            backgroundImage: "./images/e3-2016-forza-horizon-3-le-hoi-than-gio-gioi-thieu-game-01.jpg"
         },
         "battle-royal": {
             name: "PUBG",
             video: "https://youtu.be/h0s5X6pyhd0",
             link: "https://www.pubg.com/vi/main",
             description: "PUBG là một trò chơi bắn súng sinh tồn, nơi 100 người chơi chiến đấu để trở thành người sống sót cuối cùng.",
-            backgroundImage: "../images/pubg-mobile-game-image-4.jpg"
+            backgroundImage: "./images/pubg-mobile-game-image-4.jpg"
         }
     };
 
@@ -82,28 +82,28 @@ document.addEventListener("DOMContentLoaded", () => {
             video: "https://www.youtube.com/watch?v=zchN1X4LcJ8",
             link: "https://lolesports.com/vi-VN",
             description: "Bình Luận Tiếng Việt: DK vs GEN | NS vs DRX | Tuần 2 Ngày 5 | LCK 2025",
-            backgroundImage: "esport/LCK_BG.jpg"
+            backgroundImage: "./esport/LCK_BG.jpg"
         },
         "LCP": {
             name: "LCP MID SEASON 2025",
             video: "https://www.youtube.com/watch?v=TotOfIwW6k8",
             link: "https://lolesports.com/vi-VN",
             description: "CFO vs TLN (BO5) | Chung Kết Tổng - Khởi Động Mùa Giải LCP 2025",
-            backgroundImage: "esport/LCP_BG.jpg"
+            backgroundImage: "./esport/LCP_BG.jpg"
         },
         "DTDV": {
             name: "DTDV SPRING 2025",
             video: "https://www.youtube.com/watch?v=Dc8ZpJHXofU",
             link: "https://lienquan.garena.vn/tin-tuc/giai-dau/",
             description: "BOX vs TDT | BSS vs 1S | SGP vs FPT - GĐ1 | ABBEN ENERGY ĐTDV MÙA XUÂN 2025 | 06/04/2025",
-            backgroundImage: "/esport/DTDV_BG.jpg"
+            backgroundImage: "./esport/DTDV_BG.jpg"
         },
         "VCT": {
             name: "VCT 2025 - Pacific Stage 1",
             video: "https://www.youtube.com/watch?v=s2nFDnMtdcI",
             link: "https://valorantesports.com/vi-VN/",
             description: "[VN] VCT 2025 - Pacific Stage 1 | Group Stage - NGÀY 11",
-            backgroundImage: "/esport/VCT_BG.jpg"
+            backgroundImage: "./esport/VCT_BG.jpg"
         }
     };
 
@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", () => {
         link.addEventListener("click", (e) => {
             e.preventDefault();
             const category = link.dataset.game;
-            window.location.href = `../html/news.html?category=${category}`;
+            window.location.href = `./html/news.html?category=${category}`;
         });
     });
 
