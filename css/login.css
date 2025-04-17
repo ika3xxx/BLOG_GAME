@@ -31,6 +31,7 @@ form {
     border: 5px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 40px rgba(178, 178, 178, 0.558);
     padding: 20px;
+    margin-bottom: 5px;
 }
 
 form * {
