@@ -257,7 +257,7 @@ document.addEventListener("DOMContentLoaded", () => {
         loginBtn.addEventListener("click", () => {
             if (confirm("Đăng xuất?")) {
                 localStorage.removeItem("loggedInUser");
-                window.location.href = "../index.html";
+                window.location.href = "index.html";
             }
         });
     }
